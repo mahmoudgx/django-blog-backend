@@ -16,6 +16,7 @@ djoser = "*"
 djangorestframework-simplejwt = "*"
 django-silk = "*"
 gunicorn = "*"
+dj-database-url = "*"
 
 [dev-packages]
 pytest = "*"
