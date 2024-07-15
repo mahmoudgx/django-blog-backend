@@ -94,7 +94,7 @@ TEMPLATES = [
 WSGI_APPLICATION = 'Blog.wsgi.application'
 
 
-
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 
 # Password validation
