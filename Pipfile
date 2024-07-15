@@ -17,6 +17,7 @@ djangorestframework-simplejwt = "*"
 django-silk = "*"
 gunicorn = "*"
 dj-database-url = "*"
+whitenoise = "*"
 
 [dev-packages]
 pytest = "*"
