@@ -18,6 +18,8 @@ django-silk = "*"
 gunicorn = "*"
 dj-database-url = "*"
 whitenoise = "*"
+django-storages = "*"
+boto3 = "*"
 
 [dev-packages]
 pytest = "*"

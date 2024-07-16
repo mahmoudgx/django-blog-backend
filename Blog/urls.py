@@ -24,7 +24,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/', include('weblog.urls')),
     path('__debug__/', include(debug_toolbar.urls)),
-] + static(common.MEDIA_URL, document_root=common.MEDIA_ROOT)
-
+]
 
 urlpatterns += [path('silk/', include('silk.urls', namespace='silk'))]
