@@ -36,3 +36,9 @@ class PostDetailSerializer(PostListSerializer):
 
     class Meta(PostListSerializer.Meta):
         fields = PostListSerializer.Meta.fields + ['content', 'comments']
+
+
+class AdjacentPostSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Post
+        fields = ['id', 'title']
