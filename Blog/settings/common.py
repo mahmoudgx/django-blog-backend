@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'django_filters',
     'corsheaders',
     'silk',
+    'ckeditor',
 ]
 
 
@@ -177,3 +178,4 @@ LOGGING = {
         }
     }
 }
+

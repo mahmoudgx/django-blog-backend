@@ -1,5 +1,6 @@
 from django.db import models
 from django.contrib.auth.models import User
+from ckeditor.fields import RichTextField
 
 class Author(models.Model):
     user = models.OneToOneField(User, on_delete=models.CASCADE)
@@ -18,7 +19,7 @@ class Category(models.Model):
 class Post(models.Model):
     title = models.CharField(max_length=200, db_index=True)
     description = models.TextField(blank=True, null=True)
-    content = models.TextField()
+    content = RichTextField()
     author = models.ForeignKey(Author, on_delete=models.CASCADE, related_name='posts')
     categories = models.ManyToManyField(Category, related_name='posts')
     image = models.ImageField(upload_to='post_images/', blank=True, null=True)
