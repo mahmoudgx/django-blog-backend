@@ -12,7 +12,7 @@ class WebsiteUser(HttpUser):
     def add_comment(self):
         print('add comment')
         self.client.post(
-            f'/api/posts/9/comments/', name='api/posts/9/comments/',
+            f'/api/posts/11/comments/', name='api/posts/11/comments/',
             json={
     "name": "mahmoud",
     "email": "mahmoud@mahmoudibrahim.me",
